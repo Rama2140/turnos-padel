@@ -29,4 +29,22 @@
         </div>
         <div class="form-group">
           <label for="club">Club</label>
-  
+          <input type="text" id="club" name="club" placeholder="Ej: Club Deportivo" required>
+        </div>
+        <button type="submit">Publicar Turno</button>
+      </form>
+    </section>
+
+    <section id="turnos" class="container">
+      <h2>🗓 Turnos Disponibles</h2>
+      <ul id="listaTurnos"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado por <a href="https://github.com/Rama2140" target="_blank">Rama2140</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
