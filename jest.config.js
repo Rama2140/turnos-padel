@@ -6,3 +6,6 @@ module.exports = {
   ],
   testEnvironment: "node", // Usa el entorno adecuado
 };
+module.exports = {
+  testEnvironment: "jsdom",
+};
