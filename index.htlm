@@ -3,46 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turnos de Pádel</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Turnos Pádel</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>🎾 Organizador de Turnos de Pádel</h1>
-      <p>Encuentra jugadores y organiza partidos fácilmente.</p>
-    </div>
+  <header class="header">
+    <h1>Turnos Pádel</h1>
+    <p>Organiza tus turnos y encuentra compañeros de juego</p>
   </header>
 
-  <main>
-    <section id="formulario" class="container">
-      <h2>📋 Publica un Turno</h2>
-      <form id="turnoForm">
-        <div class="form-group">
-          <label for="nombre">Tu Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
-        </div>
-        <div class="form-group">
-          <label for="hora">Hora</label>
-          <input type="time" id="hora" name="hora" required>
-        </div>
-        <div class="form-group">
-          <label for="club">Club</label>
-          <input type="text" id="club" name="club" placeholder="Ej: Club Deportivo" required>
-        </div>
-        <button type="submit">Publicar Turno</button>
+  <main class="container">
+    <section class="form-section">
+      <h2>Publicar un turno</h2>
+      <form id="form-turno">
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <input type="text" id="club" placeholder="Club de pádel" required>
+        <input type="datetime-local" id="fecha" required>
+        <button type="submit">Publicar</button>
       </form>
     </section>
 
-    <section id="turnos" class="container">
-      <h2>🗓 Turnos Disponibles</h2>
-      <ul id="listaTurnos"></ul>
+    <section class="turnos-section">
+      <h2>Turnos disponibles</h2>
+      <ul id="turnos-list"></ul>
     </section>
   </main>
 
-  <footer>
-    <p>Creado por <a href="https://github.com/Rama2140" target="_blank">Rama2140</a></p>
+  <footer class="footer">
+    <p>&copy; 2024 Turnos Pádel | Organiza tu juego</p>
   </footer>
 
   <script src="aplicación.js" defer></script>
